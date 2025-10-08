@@ -1,0 +1,5 @@
+model/__pycache__/*
+params/*.onnx
+utils/__pycache__/*
+.ipynb_checkpoints/
+resultmydata/*
