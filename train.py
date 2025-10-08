@@ -32,12 +32,12 @@ def parse_args():
     parser.add_argument('--crop-size', type=int, default=480, help='crop image size')
     parser.add_argument('--base-size', type=int, default=512, help='base image size')
     # Training parameters
-    parser.add_argument('--batch-size', type=int, default=8, help='batch_size for training')
+    parser.add_argument('--batch-size', type=int, default=32, help='batch_size for training')
     parser.add_argument('--epochs', type=int, default=300, help='number of epochs')
     parser.add_argument('--warm-up-epochs', type=int, default=0, help='warm up epochs')
     parser.add_argument('--learning_rate', type=float, default=0.005, help='learning rate')
     parser.add_argument('--use_cuda', type=str, default='True', help='use gpu ')
-    parser.add_argument('--gpu_ids', type=str, default='3', help='gpu ids: e.g. 0  0,1,2, 2,3. use -1 for CPU')
+    parser.add_argument('--gpu_ids', type=str, default='0', help='gpu ids: e.g. 0  0,1,2, 2,3. use -1 for CPU')
     parser.add_argument('--random_seed', type=str, default='42', help='0,1,.....')
 
     args = parser.parse_args()

@@ -41,7 +41,7 @@ class DataPrefetcher():
 class IRDSTDataset(Data.Dataset):
     def __init__(self, args, mode='train'):   
         #path of dataset
-        base_dir = 'datasets/example/'
+        base_dir = '/media/meysam/ssd2/IRDST/IRDST_real/'
 
         # list of images in dataset
         if mode == 'train':
@@ -68,8 +68,8 @@ class IRDSTDataset(Data.Dataset):
 
     def __getitem__(self, i):
         name = self.names[i]
-        img_path = self.imgs_dir+'/'+name+'.bmp'
-        mask_path = self.mask_dir+'/'+name+'.bmp'
+        img_path = self.imgs_dir+'/'+name+'.png'
+        mask_path = self.mask_dir+'/'+name+'.png'
 
         img = Image.open(img_path).convert('L')  
         mask = Image.open(mask_path).convert('1')

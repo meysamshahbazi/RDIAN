@@ -56,14 +56,14 @@ class RDIAN(nn.Module):
         self.conv_res = conv_batch(16, 32, 1, padding=0)
         self.relu = nn.ReLU(True)
         
-        self.d11=Conv_d11()
-        self.d12=Conv_d12()
-        self.d13=Conv_d13()
-        self.d14=Conv_d14()
-        self.d15=Conv_d15()
-        self.d16=Conv_d16()
-        self.d17=Conv_d17()
-        self.d18=Conv_d18()
+        self.d11 = Conv_d11()
+        self.d12 = Conv_d12()
+        self.d13 = Conv_d13()
+        self.d14 = Conv_d14()
+        self.d15 = Conv_d15()
+        self.d16 = Conv_d16()
+        self.d17 = Conv_d17()
+        self.d18 = Conv_d18()
 
         self.head = _FCNHead(32, 1)
 
