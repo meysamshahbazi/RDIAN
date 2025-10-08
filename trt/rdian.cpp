@@ -49,10 +49,8 @@ RDIAN::RDIAN(int img_w ,int img_h)
     buffers.reserve(engine->getNbBindings());
     input_h = engine->getBindingDimensions(0).d[2];
     input_w = engine->getBindingDimensions(0).d[3];
-    // detection_attribute_size = engine->getBindingDimensions(1).d[1];
-    // num_detections = engine->getBindingDimensions(1).d[2];
 
-    std::cout << "----->RDIAN " << input_h << " "<< input_w << " "<< detection_attribute_size << " "<< num_detections << std::endl;
+    std::cout << "----->RDIAN " << input_h << " " << input_w << std::endl;
     // ----->YOLO12 640 640 84 8400
     // num_classes = detection_attribute_size - 4;
 

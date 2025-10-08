@@ -55,7 +55,7 @@ class export(object):
         self.net.eval()
         self.net = self.net.cuda()
 
-        input = torch.randn(1,1,256,256).cuda()
+        input = torch.randn(1,1,512,512).cuda()
         self.net.eval()
         self.net.cuda()
         torch.onnx.export(self.net, input, "params/rdian.onnx", input_names=["input"], output_names=["mask"], export_params=True)

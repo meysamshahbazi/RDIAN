@@ -29,12 +29,7 @@ private:
     // Model parameters
     int input_w;  // Input image width expected by the model
     int input_h;  // Input image height expected by the model
-    int num_detections;  // Number of detections output by the model
-    int detection_attribute_size;  // Attributes (e.g., bbox, class) per detection
-    int num_classes = 80;  // Number of classes (e.g., COCO dataset has 80 classes)
-    static const int nc{10}; // number of class
 
-    // Maximum supported image size (used for memory allocation checks)
 
     // Confidence threshold for filtering detections
     float conf_threshold = 0.3f; //0.3
